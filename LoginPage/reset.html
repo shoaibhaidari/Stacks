@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/loginpage.css">
     <title>Reset Password</title>
+    <script>
+        function myFunction() {
+          document.getElementById("reset").innerHTML = "Your password is changed";
+        }
+        </script>
 </head>
 
 <body>
@@ -13,9 +18,11 @@
     <form action="">
         <div>
             <input type="password" id="">
-            
-            <button onclick="location.href='profile.html'" type="button">Reset</button>
-     
+            <p id="reset">  </p>
+            <button onclick="myFunction()" type="button" >Reset</button>
+
+
+    
         </div>
        
     </form>
